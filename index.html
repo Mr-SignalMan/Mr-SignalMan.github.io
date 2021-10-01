@@ -27,7 +27,7 @@
  	text-align: center;
  	color: white;
  	padding-top: 50vh;
- 	font-size: 30px;
+ 	font-size: 2.5em;
  	position: absolute; 
  	width: 100%; 
  	height: 100%; 
@@ -39,14 +39,50 @@
  {
  	display: none;
  }
+ .hello
+ {
+ 	font-family: 'Courgette', cursive; text-align: center; padding-top: 50vh; position: relative; color: white; font-size: 700%;
+ }
+</style>
+<style type="text/css">
+	@media screen and (min-width:767px)
+	{
+		.three
+  		{
+  			display: none;
+  		}
+	}
+	@media screen and (min-width:200px) and (max-width:767px) 
+	{
+  		.hello
+  		{
+  			font-size: 400%;
+  		}
+  		.two
+  		{
+  			display: none;
+  		}
+  		.d2
+		{
+			background-size: cover; height: 50vh; display: block;
+		}
+		 span 
+		{
+		 	padding-top: 25vh;
+		 	font-size: 200%;
+		 	
+		 	
+		}
+		
+	}
 </style>
 <body>
 	<div style="width: 100%; height: 100vh; display: block; background-color: black; position: relative;
 	display: inline-block;" id="two"  >
-		<h1 style="font-family: 'Courgette', cursive; text-align: center; padding-top: 50vh; position: relative; color: white; font-size: 700%;">Hello</h1>
+		<h1 class="hello">Hello</h1>
 	</div>
 	<div class="container-fluid" id="one" style="display: none;">
-		<div class="row">
+		<div class="row two">
 			<div class="col-md-4 d1">
 				<span class="s">Обо мне</span>
 				<div class="d2" style="background-image: url(z1.jpg);"></div>
@@ -63,6 +99,26 @@
 				<div class="d2" style="background-image: url(z4.jpg);"></div>
 			</div>			
 		</div>
+
+
+
+		<div class="row three">
+			<div class="col-md-4 d1">
+				<span class="s">Мои навыйки и проекты</span>
+
+				<div class="d2" style="background-image: url(z2.jpg);"><h3 style="color: white; position: relative; text-align: center; font-family: 'Courgette', cursive;">Oleg Tikhomirov</h3> </abbr></div>
+			</div>
+			<div class="col-md-4 d1" style="width: 50%;">
+				<span class="s">Обо мне</span>
+				<div class="d2" style="background-image: url(z1.jpg);"></div>
+			</div>
+
+			
+
+			<div class="col-md-4 d1" style="width: 50%;">
+				<span class="s">Связаться со мной</span>
+				<div class="d2" style="background-image: url(z4.jpg);"></div>
+			</div>	
 	</div>
 
 <!--bootstrap-->
