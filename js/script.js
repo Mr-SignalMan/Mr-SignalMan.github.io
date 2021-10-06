@@ -3,4 +3,4 @@ setTimeout(function(){
 }, 1500);
 setTimeout(function(){
 	document.getElementById('two').style.display = 'none';
-}, 1500);
+}, 1500); 
